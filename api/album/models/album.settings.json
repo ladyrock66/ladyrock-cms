@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "albums",
+  "info": {
+    "name": "Album",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome": {
+      "type": "string",
+      "required": true
+    },
+    "Ano": {
+      "type": "string"
+    },
+    "Preco": {
+      "type": "decimal"
+    },
+    "Recomendacao": {
+      "type": "boolean",
+      "default": false
+    },
+    "Novidade": {
+      "type": "boolean",
+      "default": false
+    },
+    "Oferta": {
+      "type": "boolean",
+      "default": false
+    },
+    "ForaDoCatalogo": {
+      "type": "boolean",
+      "default": false
+    },
+    "Descricao": {
+      "type": "text"
+    },
+    "YoutubeLink": {
+      "type": "string"
+    },
+    "Fotos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "NumeroGravadora": {
+      "type": "string"
+    },
+    "artistas": {
+      "collection": "artista",
+      "via": "albums",
+      "dominant": true
+    },
+    "media": {
+      "model": "medias"
+    },
+    "estilos": {
+      "collection": "estilo"
+    },
+    "pais": {
+      "model": "pais"
+    },
+    "gravadora": {
+      "model": "gravadora"
+    }
+  }
+}

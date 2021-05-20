@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "estilos",
+  "info": {
+    "name": "Estilo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

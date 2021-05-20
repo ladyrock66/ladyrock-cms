@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/gravadoras",
+      "handler": "gravadora.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/gravadoras/count",
+      "handler": "gravadora.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/gravadoras/:id",
+      "handler": "gravadora.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/gravadoras",
+      "handler": "gravadora.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/gravadoras/:id",
+      "handler": "gravadora.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/gravadoras/:id",
+      "handler": "gravadora.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

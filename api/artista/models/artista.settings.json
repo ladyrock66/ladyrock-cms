@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artistas",
+  "info": {
+    "name": "Artista"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome": {
+      "type": "string",
+      "required": true
+    },
+    "albums": {
+      "via": "artistas",
+      "collection": "album"
+    }
+  }
+}

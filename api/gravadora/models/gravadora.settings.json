@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gravadoras",
+  "info": {
+    "name": "Gravadora"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "NomeCompleto": {
+      "type": "string",
+      "required": true
+    },
+    "Abreviatura": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

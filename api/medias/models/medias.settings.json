@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "medias",
+  "info": {
+    "name": "Medias"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
